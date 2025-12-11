@@ -1,0 +1,157 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto' sans-serif;
+  font-size: 16;
+  line-height: 1.6;
+  background-color: #F8F9FA;
+  color: #212529;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Roboto Mono', monospace;
+  color: #007BFF;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #007BFF;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+ul li a:hover {
+  background-color: #FFC107;
+  color: #212529;
+}
+
+#banner {
+  display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 10px 0; 
+    flex-wrap: wrap;
+}
+
+#banner img {
+   width: 45%; 
+    max-height: 250px; 
+    height: auto; 
+    border-radius: 20px;
+    margin: 10px; 
+    max-width: none; 
+    display: block; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#circulos {
+ display: grid;
+    grid-template-columns: 1fr; 
+    gap: 15px; 
+    padding: 15px;
+}
+
+#circulos figure {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#circulos img {
+ width: 100%; 
+    height: auto; 
+    display: block;
+    border-radius: 0; 
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+figcaption, h3, p {
+    padding: 15px;
+    background-color: white; 
+    border-radius: 0 0 10px 10px;
+    border-left: none; 
+    margin-top: 0;
+    box-shadow: none;
+}
+
+form div {
+  margin-bottom: 15px
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input[type="text"]
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #FFC107;
+  color: 212529;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #FFA000;
+}
+
+@media (min-width: 768px) {
+
+#circulos {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 20px;
+    }
+
+#banner img {
+  width: 45%;
+  max-width: none;
+  height: 300px;
+  margin: 20px;
+}
+}
